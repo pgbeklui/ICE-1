@@ -11,7 +11,7 @@ public class CardTrick {
         {
             Card c = new Card();
             c.setValue(c.getValue());
-            c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
+            c.setSuit(Card.SUITS());
         }
         Scanner in = new Scanner (System.in);
         
@@ -20,9 +20,14 @@ public class CardTrick {
         System.out.println("Pick a value for the suit");
         int value = in.nextInt();
         
-        // create their card
-        // and search magicHand here
-        //Then report the result here
+        System.out.println("Your card is the " + value + " of " + suit);
+        
+      
+        System.out.println("the magic hand is..");
+        System.out.println(magicHand);
+        
+  
+    
     }
     
 }
