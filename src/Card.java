@@ -1,27 +1,26 @@
 // Prince Jr Gbeklui 991359591
 
 
-
 public class Card 
 {
 
-   private String suit; 
-   private int value;
+   
 
-   
-   
-    public enum suit = {"Hearts", "Diamonds", "Spades", "Clubs"};
+   private String suit; 
+   private int value;//1-13
+
+   public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
     
     public String getSuit() 
     {
         return suit;
-        
     }
 
     
     public void setSuit(String suit) 
     {
         this.suit = suit;
+       
     }
 
     
@@ -40,5 +39,16 @@ public class Card
    
     
    
-    
+     public static void generateHand()
+        {
+                int countCards = 0;
+		for(Card.suit s: Card.value.v())
+                {
+                    for(Card.value v: Card.value.values())
+                    {
+                        cards[countCards] = (new Card(s,v));
+                        countCards++;
+                    }
+                }
+        }        
 }
